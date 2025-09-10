@@ -6,7 +6,8 @@
     <title>Gibbor Motors - Connect With Us</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            font-weight: 500;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -18,63 +19,128 @@
         }
         .container {
             background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 600px;
+            padding: 0;
+            border-radius: 0;
+            box-shadow: none;
+            width: 100%;
+            max-width: 100%;
             text-align: center;
         }
         .header {
-            background-color: #e0e0e0; /* Light Grey */
+            background: linear-gradient(to bottom, #FF4500 50%, white 50%);
             color: #333;
             padding: 20px;
             margin-bottom: 20px;
-            border-radius: 8px;
+            border-radius: 0;
+            position: relative;
+            text-align: center;
+            height: 350px;
         }
         .logo {
-            max-width: 200px;
+            max-width: 220px; /* Increased from 200px */
             height: auto;
-            margin-bottom: 10px;
+            border-radius: 50%;
+            border: 7px solid white; /* Increased from 6px */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
         }
-        .links {
+        .text-below-logo {
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            width: 100%;
+            text-align: center;
+        }
+        .text-below-logo h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .text-below-logo p {
+            margin: 0;
+            padding: 0;
+            font-size: 1.6em;
+        }
+        .social-links {
             list-style: none;
             padding: 0;
+            background-color: #f2f2f2;
+            border-radius: 0;
+            padding: 10px;
         }
-        .links li {
+       .social-links li {
             margin-bottom: 10px;
-        }
-        .links a {
-            display: inline-flex;
             align-items: center;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
+            justify-content: space-between;
+            position: relative;
+            padding-left: 2%;
         }
-        .links img {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
+         .social-links li:nth-child(1) a,
+        .social-links li:nth-child(2) a {
+            background-color: #FF4500;
+            color: white;
+        }
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 18px 28px;
+            font-size: 1.8em;  /* Increased from 1.6em */
+            text-decoration: none;
+            border-radius: 10px;
+            color: black;
+            width: 100%;
+            box-sizing: border-box;
+            padding-right: 40px;
+            position: relative;
+            background-color: white;
+        }
+       .social-links a::after {
+            content: " \2192";
+            font-size: 2em;
+            position: absolute;
+            right: 10px;
+              color: black;
+        }
+        .social-links img {
+           width: 90px;  /* Increased from 60px */
+             height: 90px; /* Increased from 60px */
+            object-fit: contain;
+             margin-right: 15px;
+            vertical-align: middle;
+        }
+         .social-links li.find-us-on {
+            padding: 10px;
+            text-align: center;
+            font-size: 2.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+              width: 100%;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img src="https://i.imgur.com/MAwEvxq.png" alt="Gibbor Motors Logo" class="logo">
-            <h1>Gibbor Motors</h1>
-            <p>Follow us for Weekly Vehicle Tips, How-To Videos, and Car Content</p>
+            <img src="https://i.imgur.com/GM7JfZ2.png" alt="Gibbor Motors Logo" class="logo">
+            <div class="text-below-logo">
+                <h1 style="font-size: 3em;">Gibbor Motors</h1>
+                <p style="font-size: 1.8em;">Follow us for Weekly Vehicle Tips, How-To Videos, and Car Content!</p>
+            </div>
         </div>
-        <ul class="links">
-            <li><a href="https://gibbormotors.co.za"><img src="https://i.imgur.com/B5fyej8.png" alt="Website"> Gibbor Website</a></li>
-            <li><a href="https://g.page/r/CQYptCn2FP78EBE/review"><img src="https://i.imgur.com/jHRnQy8.png" alt="Google Reviews"> Google Reviews</a></li>
-            <li><a href="https://www.facebook.com/share/1YMcj4ucyP/"><img src="https://i.imgur.com/hYlU1xD.png" alt="Facebook"> Facebook</a></li>
-            <li><a href="https://www.instagram.com/gibbormotors?igsh=MTRxODVwamwwNmZ0aA=="><img src="https://i.imgur.com/151wVml.png" alt="Instagram"> Instagram</a></li>
-            <li><a href="https://www.tiktok.com/@gibbor_motors?_t=ZS-8zXu9PKsMOu&_r=1"><img src="https://i.imgur.com/1pPsg6V.png" alt="TikTok"> TikTok</a></li>
-            <li><a href="https://youtube.com/@gibbormotors?si=qg5SwlwdXb1CwEh5"><img src="https://i.imgur.com/MBPJZYO.png" alt="YouTube"> YouTube</a></li>
-            <li><a href="https://wa.me/27825694221"><img src="https://i.imgur.com/B5fyej8.png" alt="WhatsApp"> WhatsApp</a></li>
+        <ul class="social-links">
+            <li><a href="https://gibbormotors.co.za">  <img src="https://i.imgur.com/GM7JfZ2.png" alt="Website">  Gibbor Website </a></li>
+            <li><a href="https://g.page/r/CQYptCn2FP78EBE/review">  <img src="https://i.imgur.com/XR1tMcl.jpeg" alt="Google Reviews"> Google Reviews </a></li>
+            <li class="find-us-on">Find us on</li>
+            <li><a href="https://www.facebook.com/share/1YMcj4ucyP/"> <img src="https://i.imgur.com/4kcfNSr.png" alt="Facebook"> Facebook</a></li>
+            <li><a href="https://www.instagram.com/gibbormotors?igsh=MTRxODVwamwwNmZ0aA==">  <img src="https://i.imgur.com/AQvCoji.png" alt="Instagram"> Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@gibbor_motors?_t=ZS-8zXu9PKsMOu&_r=1"> <img src="https://i.imgur.com/ZacYSV7.png" alt="TikTok"> TikTok</a></li>
+            <li><a href="https://youtube.com/@gibbormotors?si=qg5SwlwdXb1CwEh5">  <img src="https://i.imgur.com/NLmSuNY.png" alt="YouTube"> YouTube</a></li>
+            <li><a href="https://wa.me/27825694221">  <img src="https://i.imgur.com/9dsxP0I.png" alt="WhatsApp"> WhatsApp</a></li>
         </ul>
     </div>
 </body>
